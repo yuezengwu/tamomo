@@ -1,0 +1,19 @@
+{
+  "as_of": "2026-09-03",
+  "currency": "USD",
+  "central_cluster_gpu_count": 8,
+  "macs_per_b300_at_equal_reference_compute": 50,
+  "comparison_basis": "相同基准总算力、相同任务和质量目标；B300 集群为固定基准。",
+  "mac_extra_wear_usd_per_hour": 0.05,
+  "mac_extra_power_kw": 0.25,
+  "electricity_usd_per_kwh": 0.15,
+  "central_gpu": "B300",
+  "central_usd_per_gpu_hour": 7.89,
+  "central_task_cost_index": 100,
+  "efficiency_ratio_min": 0.1,
+  "efficiency_ratio_max": 1,
+  "price_source": "https://www.runpod.io/pricing",
+  "evidence_note": "GPU 小时价来自定价页；50 台 Mac 对应 1 张 B300 的基准算力、折旧、功耗与电价均为假设，不是实测。单 GPU 实例价用作集群每 GPU 小时的算例参数，不是多节点集群报价。",
+  "efficiency_ratio_definition": "在两边基准总算力相同时，Mac 集群实际有效训练速度 / B300 集群实际有效训练速度。包含通信、等待、故障、重算和达到同等质量的额外工作；100% 表示两边实际速度相同。",
+  "cost_scope": "个人设备仅计额外运行折旧与新增电费；中心化方案计 GPU 运行租金。已有设备的历史购置款、自然贬值和原闲置电费不计入。"
+}
